@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#252545"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6C63FF"/>
+      <stop offset="100%" style="stop-color:#4a3fbf"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="blur"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <rect width="400" height="200" fill="url(#bg)"/>
+  <circle cx="200" cy="100" r="70" fill="#6C63FF" opacity="0.07" filter="url(#blur)"/>
+
+  <!-- Shield shape -->
+  <path d="M200,22 L270,50 L270,105 Q270,148 200,170 Q130,148 130,105 L130,50 Z"
+    fill="#1E1E3A" stroke="url(#shieldGrad)" stroke-width="2.5"/>
+  <!-- Shield inner -->
+  <path d="M200,35 L255,58 L255,105 Q255,138 200,155 Q145,138 145,105 L145,58 Z"
+    fill="#252545" opacity="0.8"/>
+  <!-- Shield pulse ring -->
+  <path d="M200,22 L270,50 L270,105 Q270,148 200,170 Q130,148 130,105 L130,50 Z"
+    fill="none" stroke="#6C63FF" stroke-width="1" opacity="0.4"/>
+
+  <!-- Lock icon inside shield -->
+  <rect x="184" y="90" width="32" height="26" rx="4" fill="#6C63FF" opacity="0.9"/>
+  <path d="M191,90 L191,82 Q191,70 200,70 Q209,70 209,82 L209,90"
+    fill="none" stroke="#6C63FF" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="200" cy="103" r="4" fill="#ffffff" opacity="0.9"/>
+  <line x1="200" y1="107" x2="200" y2="112" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- Binary/code particles around shield -->
+  <text x="60"  y="60"  fill="#6C63FF" font-size="9" font-family="monospace" opacity="0.5">10110</text>
+  <text x="310" y="60"  fill="#4FC3F7" font-size="9" font-family="monospace" opacity="0.5">01001</text>
+  <text x="55"  y="130" fill="#4FC3F7" font-size="9" font-family="monospace" opacity="0.4">11010</text>
+  <text x="305" y="130" fill="#6C63FF" font-size="9" font-family="monospace" opacity="0.4">10101</text>
+  <text x="70"  y="90"  fill="#A78BFA" font-size="9" font-family="monospace" opacity="0.4">0110</text>
+  <text x="315" y="90"  fill="#A78BFA" font-size="9" font-family="monospace" opacity="0.4">1001</text>
+  <text x="75"  y="158" fill="#6C63FF" font-size="9" font-family="monospace" opacity="0.35">0101</text>
+  <text x="300" y="158" fill="#4FC3F7" font-size="9" font-family="monospace" opacity="0.35">1010</text>
+
+  <text x="200" y="192" text-anchor="middle" fill="#6C63FF" font-size="11" font-family="sans-serif" font-weight="bold" opacity="0.9">CYBERSECURITY</text>
+</svg>
